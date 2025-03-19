@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-коды на карте</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .map-container {
+            position: relative;
+            max-width: 1800px; /* Установите нужную ширину для карты */
+        }
+        img.map {
+            width: 110%; /* Масштабирование изображения карты */
+            height: auto;
+        }
+        .qr-code {
+            position: absolute; /* Позволяет перемещать QR-коды */
+            width: 40px; /* Установите нужный размер */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>братские захоронения партизан и подпольщиков Пуховического района</h1>
+    <div class="map-container">
+        <img src="карта эл.png" alt="Карта" class="map">
+        
+        <!-- Примеры QR-кодов с позиционированием -->
+ 
+        <img src="старинки.png" alt="QR-код Старинки" class="qr-code" style="top: 445px; left: 292px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Starinki/')">
+        <img src="техникум.png" alt="QR-код Техникум" class="qr-code" style="top: 335px; left: 610px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Tekhnikum/')">
+       <img src="варшавка.png" alt="QR-код Варшавка" class="qr-code" style="top: 227px; left: 314px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Varshavka/')">
+        <img src="горелец.png" alt="QR-код Горелец" class="qr-code" style="top: 432px; left: 442px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Gorelets/')">
+        <img src="междуречье.png" alt="QR-код Междуречье" class="qr-code" style="top: 236px; left: 828px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Mezhdurech-ye-urochishche-Boruslovo/')">
+        <img src="новополье.png" alt="QR-код Новополье" class="qr-code" style="top: 204px; left: 162px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Novopol-ye/')">
+        <img src="новоселки.png" alt="QR-код Новосёлки" class="qr-code" style="top: 302px; left: 567px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Novoselki/')">
+        <img src="пережир.png" alt="QR-код Пережир" class="qr-code" style="top: 113px; left: 281px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Perezhir/')">
+        <img src="подкосье.png" alt="QR-код Подкосье" class="qr-code" style="top: 282px; left: 965px;" onclick="openLink('https://potaphik.github.io/brabratskaya-mogila-Podkos-ye/')">
+        <img src="руденск.png" alt="QR-код Руденск" class="qr-code" style="top: 199px; left: 361px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Rudensk/')">
+        <img src="узляны.png" alt="QR-код Узляны" class="qr-code" style="top: 180px; left: 235px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Uzlyany/')">
+        <img src="блонь.png" alt="QR-код Блонь" class="qr-code" style="top: 359px; left: 654px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Blon-/')">
+        <img src="дуковка.png" alt="QR-код Дуковка" class="qr-code" style="top: 331px; left: 860px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Dukovka/')">
+    </div>
+
+    <script>
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
