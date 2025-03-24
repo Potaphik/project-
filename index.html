@@ -10,6 +10,7 @@
             flex-direction: column;
             align-items: center;
             background-color: #f0f0f0;
+            position: relative;
         }
         .map-container {
             position: relative;
@@ -24,13 +25,24 @@
             width: 40px; /* Установите нужный размер */
             cursor: pointer;
         }
+        .footer-text {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .right-bottom-text {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
-    <h1>186 захоронений воинов и партизан, погибших при освобождении Пуховического района в годы Великой Отечественной войны</h1>
- 
+    <h1>186 захоронений воинов и партизан, погибших при освобождении Пуховического района в годы Великой отечественной войны</h1>
     <div class="map-container">
-        <img src="карта эл.png" alt="Карта" class="map">
+        <img src="карта эл.PNG" alt="Карта" class="map">
         
         <!-- Примеры QR-кодов с позиционированием -->
         <img src="старинки.png" alt="QR-код Старинки" class="qr-code" style="top: 445px; left: 292px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Starinki/')">
@@ -47,14 +59,12 @@
         <img src="блонь.png" alt="QR-код Блонь" class="qr-code" style="top: 359px; left: 654px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Blon-/')">
         <img src="дуковка.png" alt="QR-код Дуковка" class="qr-code" style="top: 331px; left: 860px;" onclick="openLink('https://potaphik.github.io/bratskaya-mogila-Dukovka/')">
     </div>
-    
-    <div style="position:absolute; bottom: 60px; left: 850px;">ГУО "Средняя школа 2 г. Марьина горка"</div>
-    <div style="position:absolute; bottom: 48px; left: 850px;">Работу выполнили учащиеся 11 класса</div>
-  <div style="position:absolute; bottom: 36px; left: 850px;">Потапенко Антон и Близнюк Артем</div>
-    <div style="position:absolute; bottom: 24px; left: 965px;">2025</div>
+    <div class="footer-text" style="top: 864px; left: 370px;">2025</div>
+    <div class="footer-text" style="top: 825px; left: 380px;">ГУО "Средняя школа 2 г. Марьина горка"</div>
+    <div class="footer-text" style="top: 838px; left: 375px;">Работа выполнена учащимися 11 класса</div>
+    <div class="footer-text" style="top: 851px; left: 360px;">Потапенко Антон и Близнюк Артем</div>
 
-
-    <script>
+<script>
         function openLink(url) {
             window.open(url, '_blank');
         }
